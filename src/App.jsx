@@ -1,6 +1,31 @@
+import { Header } from "./components/Header";
+import { Post } from "./Post";
+
+import styles from './App.module.css';
+
+import './global.css';
+import { Sidebar } from "./components/Sidebar";
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <Header/>
+
+      <div className={styles.wrapper}>
+        <Sidebar/>
+        <main>
+          <Post
+           author='Pedro Moreira' 
+           content='Aqui vai um conteúdo de um post qualquer'
+          />
+          <Post
+           author='Pedro Moreira' 
+           content='Aqui vai um conteúdo de algum outro post qualquer'
+          />
+        </main>
+      </div>
+    </div>
+
   );
 }
 

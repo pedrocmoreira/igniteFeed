@@ -19,7 +19,8 @@ export function Post(){
           <p>Fala pessoal! </p>
           <p>Acabei de subir mais um projeto no meu git!</p>
           <p><a href="">pedrocmoreira/igniteFeed</a></p>
-          <p><a href="">#teste #estudo</a></p>
+          <a href="">#teste</a>{' '}
+          <a href="">#estudo</a>
       </div>
     </article>
   )
